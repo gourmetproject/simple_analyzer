@@ -18,6 +18,10 @@ type SimpleAnalyzer struct{}
 type SimpleResult int
 
 
+func NewAnalyzer() gourmet.Analyzer {
+	return &SimpleAnalyzer{}
+}
+
 // Key is an implementation of the gourmet.Result Key function. This function tells the Gourmet
 // sensor that, for every connection we analyze, add the gourmet.Result to the Connection JSON
 // object with the JSON key "payload_byte_count".
