@@ -29,18 +29,17 @@ func (sr *SimpleResult) Key() string {
 	return "payload_byte_count"
 }
 
-// Filter is an implementation of the gourmet.Analyzer Filter function. The filter rules are:
-// - TransportType is tcp
-// - Payload length is greater than zero
+// Filter is an implementation of the gourmet.Analyzer Filter function. This filter simply checks if the
+// Connection has a payload.
 func (sa *SimpleAnalyzer) Filter(c *gourmet.Connection) bool {
-	if c.TransportType == "tcp" && len(c.Payload.Bytes()) > 0 {
+	if len(c.Payload.Bytes()) > 0 {
 		return true
 	}
 	return false
 }
 
 // Analyze is an implementation of the gourmet.Analyzer Analyze function. This function returns
-// the number of bytes in the TCP payload.
+// the number of bytes in the Connection payload.
 func (sa *SimpleAnalyzer) Analyze(c *gourmet.Connection) (gourmet.Result, error) {
 	var result SimpleResult
 	result = SimpleResult(len(c.Payload.Bytes()))
