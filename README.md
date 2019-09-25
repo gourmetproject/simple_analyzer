@@ -41,8 +41,16 @@ create a Gourmet Analyzer, your repository must:
 
 And that's it! We now have a simple Gourmet Analyzer.
 
-# Questions/Support
-[![Slack](https://cdn.appstorm.net/web.appstorm.net/web/files/2013/10/slack_icon.png)](https://join.slack.com/t/gourmetproject/shared_invite/enQtNzczMjQ4MzgzMTg5LTRjOTllNjc2MzNhMDQyNDdiMWQwZjQ5OTEwZDEyYjhiNWEwZjI3M2Y2MzExMGQ1ZjNkZjlkMjlkYTc3ZDZmN2Y)
+# Contact Us
+
+<a
+href="https://join.slack.com/t/gourmetproject/shared_invite/enQtNzczMjQ4MzgzMTg5LTRjOTllNjc2MzNhMDQyNDdiMWQwZjQ5OTEwZDEyYjhiNWEwZjI3M2Y2MzExMGQ1ZjNkZjlkMjlkYTc3ZDZmN2Y">
+	<img
+		src="https://cdn.appstorm.net/web.appstorm.net/web/files/2013/10/slack_icon.png"
+		alt="Slack icon"
+		width="40"
+	>
+</a>
 
 # Support Us
 
